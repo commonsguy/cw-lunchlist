@@ -1,0 +1,54 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:stretchColumns="1,3"
+	>
+	<TableRow>
+		<TextView android:text="Name:" />
+		<EditText android:id="@+id/name"
+			android:layout_span="3"
+		/>
+	</TableRow>
+	<TableRow>
+		<TextView android:text="Address:" />
+		<EditText android:id="@+id/addr"
+			android:layout_span="3"
+		/>
+	</TableRow>
+	<TableRow>
+		<TextView android:text="Type:" />
+		<RadioGroup android:id="@+id/types">
+			<RadioButton android:id="@+id/take_out"
+				android:text="Take-Out"
+			/>
+			<RadioButton android:id="@+id/sit_down"
+				android:text="Sit-Down"
+			/>
+			<RadioButton android:id="@+id/delivery"
+				android:text="Delivery"
+			/>
+		</RadioGroup>
+		<TextView android:text="Notes:" />
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical"
+			>
+			<EditText android:id="@+id/notes"
+				android:singleLine="false"
+				android:gravity="top"
+				android:lines="4"
+				android:scrollHorizontally="false"
+				android:maxLines="4"
+				android:maxWidth="140sp"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+			/>
+			<Button android:id="@+id/save"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Save"
+			/>
+		</LinearLayout>
+	</TableRow>
+</TableLayout>
