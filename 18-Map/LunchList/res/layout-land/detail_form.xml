@@ -28,17 +28,13 @@
 				android:text="Delivery"
 			/>
 		</RadioGroup>
-		<LinearLayout
-			android:layout_width="fill_parent"
-			android:layout_height="fill_parent"
-			android:orientation="vertical"
-			>
+		<LinearLayout android:orientation="vertical">
 			<EditText android:id="@+id/notes"
 				android:singleLine="false"
 				android:gravity="top"
-				android:lines="4"
+				android:lines="2"
 				android:scrollHorizontally="false"
-				android:maxLines="4"
+				android:maxLines="2"
 				android:maxWidth="140sp"
 				android:layout_width="fill_parent"
 				android:layout_height="wrap_content"
@@ -54,8 +50,15 @@
 				android:layout_height="wrap_content"
 				android:orientation="horizontal"
 				>
-				<TextView android:text="Location:" />
-				<TextView android:id="@+id/location" android:text="(not set)" />
+				<TextView android:text="Location:"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+				/>
+				<TextView android:id="@+id/location"
+					android:text="(not set)"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+				/>
 			</LinearLayout>
 		</LinearLayout>
 	</TableRow>
