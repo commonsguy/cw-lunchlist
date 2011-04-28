@@ -161,34 +161,34 @@ public class DetailForm extends Activity {
 	}
 	
 	private void save() {
-		String type=null;
-		
-		switch (types.getCheckedRadioButtonId()) {
-			case R.id.sit_down:
-				type="sit_down";
-				break;
-			case R.id.take_out:
-				type="take_out";
-				break;
-			default:
-				type="delivery";
-				break;
+		if (name.getText().toString().length()>0) {
+			String type=null;
+			
+			switch (types.getCheckedRadioButtonId()) {
+				case R.id.sit_down:
+					type="sit_down";
+					break;
+				case R.id.take_out:
+					type="take_out";
+					break;
+				default:
+					type="delivery";
+					break;
+			}
+	
+			if (restaurantId==null) {
+				helper.insert(name.getText().toString(),
+											address.getText().toString(), type,
+											notes.getText().toString(),
+											feed.getText().toString());
+			}
+			else {
+				helper.update(restaurantId, name.getText().toString(),
+											address.getText().toString(), type,
+											notes.getText().toString(),
+											feed.getText().toString());
+			}
 		}
-
-		if (restaurantId==null) {
-			helper.insert(name.getText().toString(),
-										address.getText().toString(), type,
-										notes.getText().toString(),
-										feed.getText().toString());
-		}
-		else {
-			helper.update(restaurantId, name.getText().toString(),
-										address.getText().toString(), type,
-										notes.getText().toString(),
-										feed.getText().toString());
-		}
-		
-		finish();
 	}
 	
 	LocationListener onLocationChange=new LocationListener() {
