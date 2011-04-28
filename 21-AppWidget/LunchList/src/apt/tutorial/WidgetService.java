@@ -52,6 +52,8 @@ public class WidgetService extends IntentService {
 																										PendingIntent.FLAG_UPDATE_CURRENT);
 				
 				updateViews.setOnClickPendingIntent(R.id.name, pi);
+				
+				c.close();
 			}
 			else {
 				updateViews.setTextViewText(R.id.title,
