@@ -1,6 +1,5 @@
 package apt.tutorial;
 
-import android.app.Activity;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.widget.Toast;
@@ -22,12 +21,12 @@ public class RestaurantMap extends MapActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.map);
 		
+		double lat=getIntent().getDoubleExtra(EXTRA_LATITUDE, 0);
+		double lon=getIntent().getDoubleExtra(EXTRA_LONGITUDE, 0);
+		
 		map=(MapView)findViewById(R.id.map);
 		
 		map.getController().setZoom(17);
-		
-		double lat=getIntent().getDoubleExtra(EXTRA_LATITUDE, 0);
-		double lon=getIntent().getDoubleExtra(EXTRA_LONGITUDE, 0);
 		
 		GeoPoint status=new GeoPoint((int)(lat*1000000.0),
 																	(int)(lon*1000000.0));
@@ -53,16 +52,14 @@ public class RestaurantMap extends MapActivity {
 		
 	private class RestaurantOverlay extends ItemizedOverlay<OverlayItem> {
 		private OverlayItem item=null;
-		private Drawable marker=null;
 		
-		public RestaurantOverlay(Drawable marker, GeoPoint status,
+		public RestaurantOverlay(Drawable marker, GeoPoint point,
 															String name) {
 			super(marker);
-			this.marker=marker;
 			
 			boundCenterBottom(marker);
 			
-			item=new OverlayItem(status, name, name);
+			item=new OverlayItem(point, name, name);
 
 			populate();
 		}
