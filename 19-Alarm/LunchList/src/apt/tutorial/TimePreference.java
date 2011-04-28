@@ -24,21 +24,13 @@ public class TimePreference extends DialogPreference {
 		return(Integer.parseInt(pieces[1]));
 	}
 
-	public TimePreference(Context ctxt) {
-		this(ctxt, null);
-	}
-
 	public TimePreference(Context ctxt, AttributeSet attrs) {
-		this(ctxt, attrs, 0);
-	}
-
-	public TimePreference(Context ctxt, AttributeSet attrs, int defStyle) {
-		super(ctxt, attrs, defStyle);
+		super(ctxt, attrs);
 		
 		setPositiveButtonText("Set");
 		setNegativeButtonText("Cancel");
 	}
-	
+
 	@Override
 	protected View onCreateDialogView() {
 		picker=new TimePicker(getContext());

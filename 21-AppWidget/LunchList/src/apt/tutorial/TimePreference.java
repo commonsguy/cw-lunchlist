@@ -2,14 +2,9 @@ package apt.tutorial;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.os.Bundle;
-import android.os.Parcel;
-import android.os.Parcelable;
 import android.preference.DialogPreference;
 import android.util.AttributeSet;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.ViewParent;
 import android.widget.TimePicker;
 
 public class TimePreference extends DialogPreference {
@@ -29,21 +24,13 @@ public class TimePreference extends DialogPreference {
 		return(Integer.parseInt(pieces[1]));
 	}
 
-	public TimePreference(Context ctxt) {
-		this(ctxt, null);
-	}
-
 	public TimePreference(Context ctxt, AttributeSet attrs) {
-		this(ctxt, attrs, 0);
-	}
-
-	public TimePreference(Context ctxt, AttributeSet attrs, int defStyle) {
-		super(ctxt, attrs, defStyle);
+		super(ctxt, attrs);
 		
 		setPositiveButtonText("Set");
 		setNegativeButtonText("Cancel");
 	}
-	
+
 	@Override
 	protected View onCreateDialogView() {
 		picker=new TimePicker(getContext());
