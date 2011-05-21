@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:orientation="vertical"
-	android:layout_width="fill_parent"
-	android:layout_height="fill_parent"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
 	>
 	<LinearLayout
 		android:orientation="horizontal"
-		android:layout_width="fill_parent"
+		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		>
 		<TextView	
@@ -15,13 +15,13 @@
 			android:text="Name:"
 			/>
 		<EditText android:id="@+id/name"
-			android:layout_width="fill_parent" 
+			android:layout_width="match_parent" 
 			android:layout_height="wrap_content" 
 			/>
 	</LinearLayout>
 	<LinearLayout
 		android:orientation="horizontal"
-		android:layout_width="fill_parent"
+		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		>
 		<TextView	
@@ -30,12 +30,12 @@
 			android:text="Address:"
 			/>
 		<EditText android:id="@+id/addr"
-			android:layout_width="fill_parent" 
+			android:layout_width="match_parent" 
 			android:layout_height="wrap_content" 
 			/>
 	</LinearLayout>
 	<Button android:id="@+id/save"
-		android:layout_width="fill_parent"
+		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:text="Save"
 	/>

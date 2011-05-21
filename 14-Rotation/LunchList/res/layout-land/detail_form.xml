@@ -1,5 +1,5 @@
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="fill_parent"
+	android:layout_width="match_parent"
 	android:layout_height="wrap_content"
 	android:stretchColumns="3"
 	>
@@ -38,11 +38,11 @@
 				android:scrollHorizontally="false"
 				android:maxLines="2"
 				android:maxWidth="140sp"
-				android:layout_width="fill_parent"
+				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 			/>
 			<Button android:id="@+id/save"
-				android:layout_width="fill_parent"
+				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:text="Save"
 			/>

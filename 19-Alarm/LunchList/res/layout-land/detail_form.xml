@@ -1,5 +1,5 @@
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="fill_parent"
+	android:layout_width="match_parent"
 	android:layout_height="wrap_content"
 	android:stretchColumns="2"
 	>
@@ -37,12 +37,12 @@
 				android:scrollHorizontally="false"
 				android:maxLines="2"
 				android:maxWidth="140sp"
-				android:layout_width="fill_parent"
+				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:hint="Notes"
 			/>
 			<EditText android:id="@+id/feed"
-				android:layout_width="fill_parent"
+				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:hint="Feed URL"
 			/>
