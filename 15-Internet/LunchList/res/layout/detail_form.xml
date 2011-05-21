@@ -27,7 +27,7 @@
 		</RadioGroup>
 	</TableRow>
 	<EditText android:id="@+id/notes"
-		android:singleLine="false"
+		android:inputType="textMultiLine"
 		android:gravity="top"
 		android:lines="2"
 		android:scrollHorizontally="false"

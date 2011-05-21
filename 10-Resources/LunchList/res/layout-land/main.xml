@@ -68,7 +68,7 @@
 						android:orientation="vertical"
 						>
 						<EditText android:id="@+id/notes"
-							android:singleLine="false"
+							android:inputType="textMultiLine"
 							android:gravity="top"
 							android:lines="3"
 							android:scrollHorizontally="false"
