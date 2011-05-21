@@ -29,3 +29,7 @@ If you wish to use this code, bear in mind a few things:
 
 	on those projects you wish to use, so the build files are
 	updated for your Android SDK version.
+
+This book has undergone several revisions, and the source
+code as well. The source tree is tagged to match the various
+book versions.
