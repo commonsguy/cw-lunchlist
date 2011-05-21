@@ -87,22 +87,18 @@ public class FeedActivity extends ListActivity {
 			this.feed=feed;
 		}
 		
-		@Override
 		public int getCount() {
 			return(feed.getItems().size());
 		}
 		
-		@Override
 		public Object getItem(int position) {
 			return(feed.getItems().get(position));
 		}
 		
-		@Override
 		public long getItemId(int position) {
 			return(position);
 		}
 		
-		@Override
 		public View getView(int position, View convertView,
 												ViewGroup parent) {
 			View row=convertView;
@@ -146,5 +142,5 @@ public class FeedActivity extends ListActivity {
 				activity.goBlooey((Exception)msg.obj);
 			}
 		}
-	};
+	}
 }
