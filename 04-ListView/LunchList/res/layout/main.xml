@@ -8,6 +8,7 @@
 		android:layout_height="wrap_content"
 		android:layout_alignParentBottom="true"
 		android:stretchColumns="1"
+		android:shrinkColumns="1"
 		>
 		<TableRow>
 			<TextView android:text="Name:" />

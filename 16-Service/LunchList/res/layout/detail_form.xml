@@ -2,6 +2,7 @@
 	android:layout_width="match_parent"
 	android:layout_height="wrap_content"
 	android:stretchColumns="1"
+	android:shrinkColumns="1"
 	>
 	<TableRow>
 		<TextView android:text="Name:" />
@@ -32,7 +33,6 @@
 		android:lines="2"
 		android:scrollHorizontally="false"
 		android:maxLines="2"
-		android:maxWidth="200sp"
 		android:layout_span="2"
 		android:hint="Notes"
 	/>

@@ -3,6 +3,7 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:stretchColumns="1"
+	android:shrinkColumns="1"
 	>
 	<TableRow>
 		<TextView android:text="Name:" />

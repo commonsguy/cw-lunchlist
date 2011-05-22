@@ -2,6 +2,7 @@
 	android:layout_width="match_parent"
 	android:layout_height="wrap_content"
 	android:stretchColumns="3"
+	android:shrinkColumns="3"
 	>
 	<TableRow>
 		<TextView android:text="Name:" />
@@ -37,7 +38,6 @@
 				android:lines="2"
 				android:scrollHorizontally="false"
 				android:maxLines="2"
-				android:maxWidth="140sp"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 			/>

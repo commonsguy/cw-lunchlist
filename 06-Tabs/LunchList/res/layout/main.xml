@@ -23,6 +23,7 @@
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:stretchColumns="1"
+				android:shrinkColumns="1"
 				android:paddingTop="4dip"
 				>
 				<TableRow>
