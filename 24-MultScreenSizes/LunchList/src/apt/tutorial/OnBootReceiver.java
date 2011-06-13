@@ -25,8 +25,6 @@ public class OnBootReceiver extends BroadcastReceiver {
 			cal.add(Calendar.DAY_OF_YEAR, 1);
 		}
 		
-android.util.Log.e("***OnBootReceiver", android.text.format.DateFormat.format("MM/dd/yy h:mmaa", cal).toString());
-		
 		mgr.setRepeating(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(),
 											AlarmManager.INTERVAL_DAY,
 											getPendingIntent(ctxt));
