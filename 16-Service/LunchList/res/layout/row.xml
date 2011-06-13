@@ -22,7 +22,7 @@
 			android:layout_weight="1"
 			android:gravity="center_vertical"
 			android:textStyle="bold"
-			android:singleLine="true"
+			android:maxLines="1"
 			android:ellipsize="end"
 		/>
 		<TextView android:id="@+id/address"
@@ -30,7 +30,7 @@
 			android:layout_height="wrap_content"
 			android:layout_weight="1"
 			android:gravity="center_vertical"
-			android:singleLine="true"
+			android:maxLines="1"
 			android:ellipsize="end"
 		/>
 	</LinearLayout>
