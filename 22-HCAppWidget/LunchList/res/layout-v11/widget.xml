@@ -3,7 +3,6 @@
 	android:id="@+id/restaurants"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:layout_marginTop="3dp"
-	android:layout_marginLeft="3dp"
+	android:layout_margin="3dp"
 	android:background="@drawable/widget_frame"
 />
