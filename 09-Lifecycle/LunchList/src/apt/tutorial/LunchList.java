@@ -122,7 +122,7 @@ public class LunchList extends TabActivity {
   
   private void startWork() {
     setProgressBarVisibility(true);
-    new Thread(longTask).start();     
+    new Thread(longTask).start();    
   }
   
   private void doSomeLongWork(final int incr) {

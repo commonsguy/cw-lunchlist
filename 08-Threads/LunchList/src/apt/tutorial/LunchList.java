@@ -94,7 +94,7 @@ public class LunchList extends TabActivity {
     else if (item.getItemId()==R.id.run) {
       setProgressBarVisibility(true);
       progress=0;
-      new Thread(longTask).start();     
+      new Thread(longTask).start();    
       
       return(true);
     }

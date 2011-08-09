@@ -44,7 +44,7 @@ public class OnBootReceiver extends BroadcastReceiver {
   
   @Override
   public void onReceive(Context ctxt, Intent intent) {
-android.util.Log.e("****OnBootReceiver", "got here");   
+android.util.Log.e("****OnBootReceiver", "got here");  
     setAlarm(ctxt);
   }
 }

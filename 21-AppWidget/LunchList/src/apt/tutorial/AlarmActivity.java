@@ -7,6 +7,6 @@ public class AlarmActivity extends Activity {
   @Override
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.alarm);   
+    setContentView(R.layout.alarm);  
   }
 }
